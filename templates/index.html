@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block header %}
+<header class="header">
+  <ul class="nav navbar-nav navbar-right">
+    <div class="col-sm-11" >
+
+    </div>
+    <div class="col-sm-1" >
+      {% if user.is_authenticated %}
+      <li><a href="{% url "logout" %}"><span class="glyphicon glyphicon-user"></span> Logout</a></li>
+      {% else %}
+      <li><a href="{% url "login" %}"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      {% endif %}
+    </div>
+  </ul>
+</header>
+{% endblock %}
+
+{% block content %}
+<section class="landing-section landing-main">
+  <h1 class="brand">Indicators tracking app</h1>
+</section>
+{% endblock %}
