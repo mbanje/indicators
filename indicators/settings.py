@@ -149,7 +149,8 @@ REST_FRAMEWORK = {
     'PAGE_SIZE': 50,
 }
 
-LOGIN_REDIRECT_URL = '/'
+LOGIN_REDIRECT_URL = 'home'
+LOGOUT_REDIRECT_URL = 'index'
 
 try:
     from .local_settings import *

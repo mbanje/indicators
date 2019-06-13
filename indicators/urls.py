@@ -19,10 +19,11 @@ from django.urls import include, path
 from django.contrib.auth import views as auth_views
 
 urlpatterns = [
-	path('', include('indicators_app.urls')),
-    path('admin/', admin.site.urls),
-    url(r"^login/$", auth_views.LoginView.as_view(), name="login"),
+    url(r'^admin/', admin.site.urls),
+    url(r'^indicators/', include('indicators_app.urls')),
+    url(r'^', include('indicators_app.urls')),
+    url(r'^login/$', auth_views.LoginView.as_view(), name="login"),
     url(
-        r"^logout/$", auth_views.LogoutView.as_view(), {"next_page": "/"}, name="logout"
+        r'^logout/$', auth_views.LogoutView.as_view(), {"next_page": "index"}, name="logout"
     ),
 ]
