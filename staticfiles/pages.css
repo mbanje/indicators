@@ -1,19 +1,4 @@
-/*
-.landing-section {
-  min-height: 100vh;
-  width: 100vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-*/
-/*
-.landing-main { 
-  background: url(/static/images/pupils.jpg) no-repeat center center fixed; 
-  background-size: cover;
-}
-*/
+
 .landing-section-content {
   padding: 2rem;
   background: rgba(0,0,0,0.8);
@@ -24,26 +9,13 @@
   flex-direction: column;
   color: #ccc;
 }
-/*
-.brand {
-  margin: 0;
-  color: #000066;
-  text-transform: capitalize;
-  line-height: 1.8;
-  text-shadow: 3px 2px blue;
-  background: rgba(0,0,0,0.4);
-  width: 100vw;
-  text-align: center;
-  padding-top: 25px;
-  padding-bottom: 25px;
-}
-*/
+
 .brand-text {
   color: #c55e00;
 }
 
 .header {
-  position: absolute;
+  position: fixed;
   width: 100vw;
   top: 0;
   left: 0;
@@ -82,19 +54,14 @@
 }
 
 
-
-
 #nav {
+  position: fixed;
   display: inline-block;
-  /*margin:10px 0px 0px 0px;*/
   text-align: center;
   color: white;
   background-color: #396;
   width: 100vw;
-  /*top: 50;*/
-  margin: auto;
-  /*left: 0;*/
-  /*position: absolute;*/
+  top: 50;
 }
 
 #nav ul {
